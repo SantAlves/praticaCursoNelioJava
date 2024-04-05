@@ -32,12 +32,14 @@ public class App {
             deCheckin = confParaDataApp.parse(entrada.next());
             System.out.println("Data de Check-out: (dd/MM/yyyy)");
             deCheckout = confParaDataApp.parse(entrada.next());
-            
-            String erro = reserva.atualizacaoData(deCheckin, deCheckout);
-            
-            if(erro != null){
-                System.out.println("Erro na reserva ->  " + erro);
+
+            Date agora = new Date();
+            if(!deCheckout.before(agora) || deCheckin.before(agora)){
+                System.out.println("Erro na reserva: atualização apenas para datas futuras.");
+            } else if(!deCheckout.after(deCheckout)){
+                System.out.println("Erro na reserva: datas de check-out devem ser depois da data de check-in.");
             }else{
+                reserva.atualizacaoData(deCheckin, deCheckout);
                 System.out.println("Reserva: " + reserva);
             }
 
