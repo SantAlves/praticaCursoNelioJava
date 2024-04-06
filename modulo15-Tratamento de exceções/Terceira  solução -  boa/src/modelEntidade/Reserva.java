@@ -1,9 +1,12 @@
+package modelEntidade;
+
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.text.SimpleDateFormat;
 
-import modelExc.Reserva;
+import modelExc.TratativasPersonalizadas;
+
 
 public class Reserva {
 

@@ -1,10 +1,12 @@
+package aplicacao;
+
 import java.util.Scanner;
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-// import modelExc.TratativasPersonalizadas;
-// import modelEntidade.Reserva;
+import modelExc.TratativasPersonalizadas;
+import modelEntidade.Reserva;
 
 
 public class App {
