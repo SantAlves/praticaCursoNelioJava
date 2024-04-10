@@ -4,9 +4,11 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 
+import arquivosTeste;
+
 public class Principal {
     public static void main(String[] args) throws Exception {
-        File file = new File("/home/alves/Imagens/teste/meuarquivo.txt");
+        File file = new File("/home/alves/Imagens/teste/arquivo.txt");
         Scanner entrada = null;
 
         try{
