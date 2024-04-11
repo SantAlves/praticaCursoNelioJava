@@ -1,20 +1,23 @@
-public class Veiculo {
-  private String modeloVeiculo;
+package entidade;
 
-  public modeloVeiculo() { 
+public class Veiculo {
+  
+  private String modelo;
+
+  public Veiculo() { 
 
   }
   
-  public modeloVeiculo(String modeloVeiculo) {
-    this.modeloVeiculo = modeloVeiculo;
+  public Veiculo (String modelo) {
+    this.modelo = modelo;
   }
 
-  public String getModeloVeiculo() {
-    return modeloVeiculo;
+  public String getModelo() {
+    return modelo;
   }
 
-  public void setModeloVeiculo(String modeloVeiculo) {
-    this.modeloVeiculo = modeloVeiculo;
+  public void setModelo(String modelo) {
+    this.modelo = modelo;
   }
 
   
