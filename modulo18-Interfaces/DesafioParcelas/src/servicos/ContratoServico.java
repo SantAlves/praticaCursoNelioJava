@@ -3,9 +3,10 @@ package servicos;
 import entidades.Contrato;
 
 public class ContratoServico {
-  private Pag_Online_Servicos pagOnlineServicos;
+  
+  private PagOnlineServicos pagOnlineServicos;
 
-  public ContratoServico(Pag_Online_Servicos pagOnlineServicos) {
+  public ContratoServico(PagOnlineServicos pagOnlineServicos) {
     this.pagOnlineServicos = pagOnlineServicos;
   }
 

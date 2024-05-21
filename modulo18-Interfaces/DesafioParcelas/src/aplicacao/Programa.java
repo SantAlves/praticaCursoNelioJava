@@ -13,15 +13,15 @@ public class Programa {
     Scanner entrada = new Scanner(System.in);
     DateTimeFormatter configData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-    System.out.print("Entre com o dados do contrato: ");
+    System.out.println("Entre com o dados do contrato: ");
     System.out.print("Número: ");
-    int numuero = entrada.nextInt();
+    int numero = entrada.nextInt();
     System.out.print("Data (DD/MM/YYYY): ");
     LocalDate date = LocalDate.parse(entrada.next(), configData);
     System.out.print("Valor do contrato: ");
     double valorTotal = entrada.nextDouble();
 
-    Contrato contrato = new Contrato(numuero, date, valorTotal);
+    Contrato contrato = new Contrato(numero, date, valorTotal);
 
     System.out.println("Digite o número de parcelas: ");
     int numParcelas = entrada.nextInt();
